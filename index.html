@@ -1,32 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Siechandra Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+
 body{
+margin:0;
 font-family:Arial;
-background:#111;
+background:#0f172a;
 color:white;
+}
+
+/* navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* hero */
+
+.hero{
 text-align:center;
-padding:50px;
+padding:120px 20px;
 }
 
-h1{
-font-size:50px;
+.hero h1{
+font-size:60px;
 }
 
-p{
-font-size:20px;
-color:#ccc;
+.hero span{
+color:#38bdf8;
 }
+
+.hero p{
+color:#94a3b8;
+}
+
+/* section */
+
+section{
+padding:80px 60px;
+}
+
+/* cards */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#020617;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+.card i{
+font-size:40px;
+color:#38bdf8;
+}
+
+/* gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* contact */
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#38bdf8;
+margin:10px;
+display:inline-block;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+color:#94a3b8;
+}
+
 </style>
 </head>
 
 <body>
 
-<h1>Siechandra</h1>
-<p>Welcome to my portfolio website</p>
-<p>This website is hosted on GitHub Pages</p>
+<!-- NAVBAR -->
+
+<nav>
+<h2>Siechandra</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Hello I'm <span>Siechandra</span></h1>
+
+<p>Creative Photographer | Designer | Digital Creator</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Saya adalah seorang kreator yang fokus pada fotografi, desain, dan digital content.
+Website ini berisi portfolio karya terbaik saya.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-camera"></i>
+<h3>Photography</h3>
+<p>Professional photography and editing</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-palette"></i>
+<h3>Design</h3>
+<p>Creative design and visual branding</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-code"></i>
+<h3>Web</h3>
+<p>Modern website development</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+<h2>Portfolio</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/500/400">
+<img src="https://picsum.photos/501/400">
+<img src="https://picsum.photos/502/400">
+<img src="https://picsum.photos/503/400">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<p>Let's work together</p>
+
+<a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+<a href="#"><i class="fa-solid fa-envelope"></i> Email</a>
+
+</section>
+
+<footer>
+
+© 2026 Siechandra Portfolio
+
+</footer>
 
 </body>
 </html>
